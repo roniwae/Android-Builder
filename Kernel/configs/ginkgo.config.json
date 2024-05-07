@@ -9,8 +9,8 @@
     },
     "toolchains": [
       {
-        "repo": "https://github.com/roniwae/RastaMod69-Clang.git",
-        "branch": "clang-12.0",
+        "repo": "https://github.com/NusantaraDevs/clang",
+        "branch": "dev/12.0",
         "binaryEnv": ["./bin"]
   }
 ],
@@ -20,8 +20,8 @@
       "CC": "clang",
       "externalCommands": {
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE": "aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
+        "CROSS_COMPILE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
         "LD": "ld.lld",
         "AS": "llvm-as",
         "AR": "llvm-ar",
