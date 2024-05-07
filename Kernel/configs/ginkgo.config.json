@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "Xiaomi Redmi Note 8",
+      "name": "Muse",
       "repo": "https://github.com/roniwae/komplit.git",
       "branch": "212",
       "device": "ginkgo",
