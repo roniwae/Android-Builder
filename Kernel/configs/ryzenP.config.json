@@ -1,0 +1,51 @@
+[
+  {
+    "kernelSource": {
+      "name": "RyzenP",
+      "repo": "https://github.com/kutemeikito/android_kernel_xiaomi_ginkgo.git",
+      "branch": "MiuiP",
+      "device": "ryzenP",
+      "defconfig": "vendor/ginkgo-perf_defconfig"
+    },
+    "toolchains": [
+      {
+        "repo": "https://github.com/NusantaraDevs/clang",
+        "branch": "dev/11.0",
+        "binaryEnv": ["./bin"]
+  }
+],
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "clang",
+      "externalCommands": {
+        "CLANG_TRIPLE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
+        "LD": "ld.lld",
+        "AS": "llvm-as",
+        "AR": "llvm-ar",
+        "NM": "llvm-nm",
+        "OBJCOPY": "llvm-objcopy",
+        "OBJDUMP": "llvm-objdump",
+        "READELF": "llvm-readelf",
+        "OBJSIZE": "llvm-size",
+        "STRIP": "llvm-strip",
+        "LDGOLD": "aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "llvm-ar",
+        "LLVM_DIS": "llvm-dis",
+        "CONFIG_THINLTO": ""
+      }
+    },
+    "AnyKernel3": {
+   "use": true,
+   "release": true,
+   "custom": {
+     "repo": "https://github.com/roniwae/AnyKernel3/",
+     "branch": "MIUI"
+   }
+},
+    "enableKernelSU": false,
+    "enableLXC": true
+  }
+]
