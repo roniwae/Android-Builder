@@ -1,8 +1,8 @@
 [
   {
     "kernelSource": {
-      "name": "Xiaomi Reedmi Note 8",
-      "repo": "https://github.com/roniwae/komplit",
+      "name": "Xiaomi Redmi Note 8",
+      "repo": "https://github.com/roniwae/komplit.git",
       "branch": "212",
       "device": "ginkgo",
       "defconfig": "vendor/ginkgo-perf_defconfig"
