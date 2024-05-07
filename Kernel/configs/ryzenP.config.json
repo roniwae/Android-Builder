@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "RyzenP",
-      "repo": "https://github.com/kutemeikito/android_kernel_xiaomi_ginkgo.git",
-      "branch": "MiuiP",
+      "repo": "https://github.com/roniwae/android_kernel_xiaomi_ginkgo.git",
+      "branch": "ryzenP",
       "device": "ryzenP",
       "defconfig": "vendor/ginkgo-perf_defconfig"
     },
