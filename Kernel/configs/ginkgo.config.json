@@ -1,0 +1,50 @@
+[
+  {
+    "kernelSource": {
+      "name": "Xiaomi Reedmi Note 8",
+      "repo": "https://github.com/roniwae/komplit",
+      "branch": "212",
+      "device": "ginkgo",
+      "defconfig": "vendor/ginkgo-perf_defconfig"
+    },
+    "toolchains": [
+      {
+        "repo": "https://github.com/roniwae/RastaMod69-Clang.git",
+        "branch": "clang-13.0",
+        "binaryEnv": ["./bin"]
+  }
+],
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "clang",
+      "externalCommands": {
+        "CLANG_TRIPLE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE": "aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
+        "LD": "ld.lld",
+        "AR": "llvm-ar",
+        "NM": "llvm-nm",
+        "OBJCOPY": "llvm-objcopy",
+        "OBJDUMP": "llvm-objdump",
+        "READELF": "llvm-readelf",
+        "OBJSIZE": "llvm-size",
+        "STRIP": "llvm-strip",
+        "LDGOLD": "aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "llvm-ar",
+        "LLVM_DIS": "llvm-dis",
+        "CONFIG_THINLTO": ""
+      }
+    },
+    "AnyKernel3": {
+   "use": true,
+   "release": true,
+   "custom": {
+     "repo": "https://github.com/roniwae/AnyKernel3/",
+     "branch": "MIUI"
+   }
+},
+    "enableKernelSU": true,
+    "enableLXC": true
+  }
+]
