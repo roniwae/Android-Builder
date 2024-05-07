@@ -10,7 +10,7 @@
     "toolchains": [
       {
         "repo": "https://github.com/roniwae/RastaMod69-Clang.git",
-        "branch": "clang-13.0",
+        "branch": "clang-12.0",
         "binaryEnv": ["./bin"]
   }
 ],
@@ -23,6 +23,7 @@
         "CROSS_COMPILE": "aarch64-linux-android-",
         "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
         "LD": "ld.lld",
+        "AS": "llvm-as",
         "AR": "llvm-ar",
         "NM": "llvm-nm",
         "OBJCOPY": "llvm-objcopy",
